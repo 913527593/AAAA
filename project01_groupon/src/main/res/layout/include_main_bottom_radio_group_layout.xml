@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999999"
+        android:layout_above="@+id/radio_group"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_home_page"
+            style="@style/MainRadioGroup"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_main_radio_home_pager"
+            android:text="@string/home"
+            android:textColor="@drawable/selector_main_radio_text_view" />
+
+        <RadioButton
+            android:id="@+id/rbtn_groupon"
+            style="@style/MainRadioGroup"
+            android:drawableTop="@drawable/selector_main_radio_groupon"
+            android:text="@string/groupon"
+            android:textColor="@drawable/selector_main_radio_text_view" />
+
+        <RadioButton
+            android:id="@+id/rbtn_found"
+            style="@style/MainRadioGroup"
+            android:drawableTop="@drawable/selector_main_radio_found"
+            android:text="@string/found"
+            android:textColor="@drawable/selector_main_radio_text_view" />
+
+        <RadioButton
+            android:id="@+id/rbtn_my"
+            style="@style/MainRadioGroup"
+            android:drawableTop="@drawable/selector_main_radio_my"
+            android:text="@string/my"
+            android:textColor="@drawable/selector_main_radio_text_view" />
+    </RadioGroup>
+
+
+</LinearLayout>

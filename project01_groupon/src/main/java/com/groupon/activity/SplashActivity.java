@@ -22,7 +22,7 @@ public class SplashActivity extends Activity {
             public void run() {
                 SharedPreferencesUtil spu = new SharedPreferencesUtil(SplashActivity.this);
                 Intent intent;
-                if (true) { //spu.isFirst()
+                if (spu.isFirst()) { //
                     intent = new Intent(SplashActivity.this, GuideActivity.class);
                     spu.setFirst(false);
                 } else {

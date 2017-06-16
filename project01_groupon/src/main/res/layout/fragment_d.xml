@@ -5,11 +5,12 @@
     android:background="@drawable/new_comer_guide_fg_4"
     tools:context="com.groupon.fragment.FragmentD">
 
-    <!-- TODO: Update blank fragment layout -->
     <Button
+        android:id="@+id/btn_fragment_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
+        android:background="@drawable/select_fragment_btn"
         android:layout_gravity="center_horizontal|bottom"
         android:layout_margin="36dp"
         android:text="开启>>" />
